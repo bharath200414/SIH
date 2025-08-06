@@ -1,0 +1,27 @@
+.feedback-page {
+  background: linear-gradient(to right, #f8f9fa, #e7efff);
+  min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #0d6efd, #6610f2);
+  background-clip: text; /* standard */
+  -webkit-background-clip: text; /* Safari/WebKit */
+  -webkit-text-fill-color: transparent; /* Safari/WebKit */
+  color: transparent; /* fallback for other browsers */
+  font-weight: bold;
+  display: inline-block; /* required for background-clip to work on text */
+}
+
+.card input,
+.card textarea,
+.card select {
+  border-radius: 0.5rem;
+}
+
+.card .form-label {
+  font-weight: 600;
+  color: #333;
+}

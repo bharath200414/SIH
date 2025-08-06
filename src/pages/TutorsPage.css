@@ -1,0 +1,45 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tutor card hover animation */
+.tutor-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutor-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+  background-clip: text;                  /* Standard */
+  -webkit-background-clip: text;          /* Safari/Chrome */
+  color: transparent;                     /* Standard fallback */
+  -webkit-text-fill-color: transparent;   /* Safari/Chrome */
+}
+
+/* Pulse animation */
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Optional: page background gradient */
+.tutors-page-background {
+  background: linear-gradient(to right, #f8f9fa, #e0e7ff);
+  min-height: 100vh;
+  padding: 2rem;
+}
