@@ -70,3 +70,104 @@
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
+/* Gradient text style */
+.text-gradient {
+  background: linear-gradient(45deg, #007bff, #00c2cb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Container themes */
+.homepage-container.light {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.homepage-container.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Top controls section */
+.top-controls {
+  position: sticky;
+  top: 0;
+  background: inherit;
+  z-index: 10;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Buttons styling */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Tagline style */
+.text-muted {
+  font-size: 0.9rem;
+}
+
+/* For smaller screens */
+@media (max-width: 576px) {
+  .top-controls {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+.homepage-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 240px;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar-btn {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  background: white;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.sidebar-btn:hover {
+  background-color: #e9ecef;
+}
+
+/* Main content styles */
+.main-content {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Text gradient */
+.text-gradient {
+  background: linear-gradient(45deg, #007bff, #00c2cb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
